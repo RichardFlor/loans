@@ -7,7 +7,7 @@ import jakarta.validation.constraints.NotNull;
 import org.hibernate.validator.constraints.br.CPF;
 
 public record CustomerLoanRequest(@Min(value = 18)@NotNull Integer age,
-                                  @CPF String cpf,
+                                  String cpf,
                                   @NotBlank String name,
                                   @Min(value = 1000)@NotNull Double income,
                                   @NotBlank String location) {
